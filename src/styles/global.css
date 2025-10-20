@@ -100,11 +100,21 @@ main {
 
 .blog-button-group li {
     display: block;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
+}
+
+.blog-button-group li a {
+    text-decoration: none;
+    color: dodgerblue;
+}
+
+.blog-button-group li a:hover {
+    font-weight: bold;
+    color: royalblue;
 }
 
 .button {
-    padding: 1rem 2.5rem;
+    padding: 1rem;
     border: none;
     border-radius: 5px;
     background-color: dodgerblue;

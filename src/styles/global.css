@@ -32,11 +32,24 @@ header {
     margin: 0 auto;
 }
 
+.menu, .nav-links a {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.menu {
+    background-color: #0d0950;
+    border: none;
+    color: #fff;
+    width: 20vw;
+    height: 5vh;
+    padding: 10px 0;
+}
+
 .nav-links {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display: none;
     margin: 0;
 }
 
@@ -45,19 +58,22 @@ header {
     text-align: center;
     padding: 10px 0;
     text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: bold;
     text-transform: uppercase;
     color: #0d0950;
 }
 
 .nav-links a:hover,
 .nav-links a:focus {
-    background-color: #ff9776;
+    background-color: dodgerblue;
+}
+
+:has(.menu[aria-expanded='true']) .nav-links {
+    display: unset;
 }
 
 @media screen and (min-width: 636px) {
     .nav-links {
+        display: block;
         flex-direction: row;
         justify-content: space-between;
         background: none;
@@ -67,6 +83,14 @@ header {
         display: inline-block;
         padding: 1rem 1.5rem;
     }
+
+    .menu {
+        display: none;
+    }
+}
+
+main {
+    padding: 3rem 1rem;
 }
 
 .blog-button-group {
@@ -86,6 +110,10 @@ header {
     background-color: dodgerblue;
     text-decoration: none;
     color: white;
+}
+
+.button:hover {
+    background-color: royalblue;
 }
 
 .footer-container {

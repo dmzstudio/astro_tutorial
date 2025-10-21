@@ -16,7 +16,7 @@ body {
 }
 
 header {
-    background-color: lightblue;
+    background-color: whitesmoke;
     position: fixed;
     top: 0;
     width: 100vw;
@@ -49,7 +49,6 @@ h1 {
 /* Header styles */
 
 .nav {
-    background-color: lightblue;
     width: 100%;
     max-width: 1240px;
     margin: 0 auto;
@@ -85,10 +84,10 @@ h1 {
 }
 
 .menu {
-    background-color: lightblue;
+    background-color: whitesmoke;
     border: none;
-    border-right: 1px solid darkblue;
-    color: darkblue;
+    border-right: 1px solid #555;
+    color: #222;
     font-weight: bold;
     font-size: 1.1rem;
     width: 15vw;
@@ -98,8 +97,8 @@ h1 {
 
 .menu:hover,
 .dark .menu:hover {
-    background-color: dodgerblue;
-    color: white;
+    background-color: #222;
+    color: whitesmoke;
 }
 
 :has(.menu[aria-expanded="true"]) .nav-links {
@@ -116,7 +115,7 @@ h1 {
     .nav-links {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: flex-end;
     }
 
     .dark .nav-links {
@@ -179,7 +178,7 @@ h1 {
 /* Dark Theme Styles */
 
 html.dark {
-    background-color: lightblue;
+    background-color: gainsboro;
     color: #222;
 }
 
